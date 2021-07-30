@@ -4,7 +4,7 @@ const username = `${process.env.REACT_APP_BROKER_USERNAME}`;
 const password = `${process.env.REACT_APP_BROKER_PASSWORD}`;
 
 const api = axios.create({
-  baseURL: 'https://instancia.cloud.shiftr.io',
+  baseURL: 'https://thalesiot.cloud.shiftr.io',
   auth: { username, password },
 });
 

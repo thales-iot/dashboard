@@ -4,7 +4,7 @@ const username = process.env.REACT_APP_BROKER_USERNAME;
 const password = process.env.REACT_APP_BROKER_PASSWORD;
 
 const mqttClient = mqtt.connect(
-  `wss://${username}:${password}@instancia.cloud.shiftr.io`,
+  `wss://${username}:${password}@thalesiot.cloud.shiftr.io`,
   { clientId: 'dashboard' },
 );
 
