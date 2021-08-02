@@ -24,10 +24,10 @@ const Dashboard: React.FC = () => {
   const [giroX, setGiroX] = useState(10);
   const [giroY, setGiroY] = useState(10);
   const [giroZ, setGiroZ] = useState(10);
-  const [magneX, setMagneX] = useState(10);
-  const [magneY, setMagneY] = useState(10);
-  const [magneZ, setMagneZ] = useState(10);
   const [alt, setAlt] = useState(10);
+  /*   const [magneX, setMagneX] = useState(10);
+  const [magneY, setMagneY] = useState(10);
+  const [magneZ, setMagneZ] = useState(10); */
   const [value, setValue] = useState(['']);
 
   /* const [value, setValue] = useState({
@@ -57,8 +57,8 @@ const Dashboard: React.FC = () => {
       if (response.data) {
         setID(value[0]);
         setTemperature(parseInt(value[1], 10));
-        setHumidity(parseInt(value[2], 10));
-        setPressure(parseInt(value[3], 10));
+        setHumidity(parseInt(value[3], 10));
+        setPressure(parseInt(value[2], 10));
         setAceleX(parseInt(value[4], 10));
         setAceleY(parseInt(value[5], 10));
         setAceleZ(parseInt(value[6], 10));
