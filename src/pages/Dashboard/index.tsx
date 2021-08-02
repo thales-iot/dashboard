@@ -59,12 +59,12 @@ const Dashboard: React.FC = () => {
         setTemperature(parseInt(value[1], 10));
         setHumidity(parseInt(value[3], 10));
         setPressure(parseInt(value[2], 10));
-        setAceleX(parseInt(value[4], 10));
-        setAceleY(parseInt(value[5], 10));
-        setAceleZ(parseInt(value[6], 10));
-        setGiroX(parseInt(value[7], 10));
-        setGiroY(parseInt(value[8], 10));
-        setGiroZ(parseInt(value[9], 10));
+        setAceleX(parseFloat(value[4]));
+        setAceleY(parseFloat(value[5]));
+        setAceleZ(parseFloat(value[6]));
+        setGiroX(parseFloat(value[7]));
+        setGiroY(parseFloat(value[8]));
+        setGiroZ(parseFloat(value[9]));
         setAlt(parseInt(value[10], 10));
         /* setMagneX(parseInt(value[10], 10));
         setMagneY(parseInt(value[11], 10));
