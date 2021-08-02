@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 import { WiBarometer } from 'react-icons/wi';
 import { FaThermometerHalf } from 'react-icons/fa';
+import { AiOutlineColumnHeight } from 'react-icons/ai';
 import { ImArrowDownLeft, ImArrowRight, ImArrowUp } from 'react-icons/im';
 import { IoIosWater } from 'react-icons/io';
 import { Panel, Control, Container, Info, Header } from './styles';
@@ -26,6 +27,7 @@ const Dashboard: React.FC = () => {
   const [magneX, setMagneX] = useState(10);
   const [magneY, setMagneY] = useState(10);
   const [magneZ, setMagneZ] = useState(10);
+  const [alt, setAlt] = useState(10);
   const [value, setValue] = useState(['']);
 
   /* const [value, setValue] = useState({
@@ -63,6 +65,7 @@ const Dashboard: React.FC = () => {
         setGiroX(parseInt(value[7], 10));
         setGiroY(parseInt(value[8], 10));
         setGiroZ(parseInt(value[9], 10));
+        setAlt(parseInt(value[10], 10));
         /* setMagneX(parseInt(value[10], 10));
         setMagneY(parseInt(value[11], 10));
         setMagneZ(parseInt(value[12], 10)); */
@@ -80,6 +83,7 @@ const Dashboard: React.FC = () => {
           <img src={ThalesLogo} alt="Thales" />
         </div>
         <Panel>
+          <strong id="title">BME</strong>
           <Control>
             <Info>
               <div id="icon">
@@ -111,6 +115,17 @@ const Dashboard: React.FC = () => {
                 <div id="info">
                   <strong>{pressure}</strong>
                   <p>KPa</p>
+                </div>
+              </div>
+            </Info>
+            <Info>
+              <div id="icon">
+                <AiOutlineColumnHeight size={30} />
+              </div>
+              <div id="data">
+                <div id="info">
+                  <strong> {alt}</strong>
+                  <p>Altitude</p>
                 </div>
               </div>
             </Info>

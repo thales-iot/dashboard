@@ -10,11 +10,6 @@ const mqttClient = mqtt.connect(
 
 mqttClient.on('connect', () => {
   mqttClient.subscribe('/Dados');
-  /* mqttClient.subscribe('/temperature');
-  mqttClient.subscribe('/humidity');
-  mqttClient.subscribe('/window');
-  mqttClient.subscribe('/light');
-  mqttClient.subscribe('/pressure'); */
 });
 
 export default mqttClient;

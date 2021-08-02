@@ -31,9 +31,9 @@ export const Header = styled.header`
 
 export const Container = styled.div`
   height: 100%;
-  max-width: 900px;
+  max-width: 1000px;
 
-  width: 760px;
+  width: 850px;
 
   #logo {
     display: flex;
