@@ -33,7 +33,7 @@ export const Container = styled.div`
   height: 100%;
   max-width: 1000px;
 
-  width: 850px;
+  width: 900px;
 
   #logo {
     display: flex;
@@ -275,7 +275,7 @@ export const Info = styled.div`
 
   #data {
     height: 80px;
-    width: 110px;
+    width: 130px;
     padding-left: 15px;
 
     background: #fff;

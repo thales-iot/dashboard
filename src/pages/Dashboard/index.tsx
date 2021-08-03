@@ -91,7 +91,7 @@ const Dashboard: React.FC = () => {
               </div>
               <div id="data">
                 <div id="info">
-                  <strong> {temperature}°</strong>
+                  <strong> {temperature}°C</strong>
                   <p>Temperatura</p>
                 </div>
               </div>
@@ -113,8 +113,8 @@ const Dashboard: React.FC = () => {
               </div>
               <div id="data">
                 <div id="info">
-                  <strong>{pressure}</strong>
-                  <p>KPa</p>
+                  <strong>{pressure} Kpa</strong>
+                  <p>Pressão</p>
                 </div>
               </div>
             </Info>
@@ -124,7 +124,7 @@ const Dashboard: React.FC = () => {
               </div>
               <div id="data">
                 <div id="info">
-                  <strong> {alt}</strong>
+                  <strong> {alt} m</strong>
                   <p>Altitude</p>
                 </div>
               </div>
@@ -138,7 +138,7 @@ const Dashboard: React.FC = () => {
               </div>
               <div id="data">
                 <div id="info">
-                  <strong> {aceleX}</strong>
+                  <strong> {aceleX} g</strong>
                   <p>Aceleração X</p>
                 </div>
               </div>
@@ -149,7 +149,7 @@ const Dashboard: React.FC = () => {
               </div>
               <div id="data">
                 <div id="info">
-                  <strong> {aceleY}</strong>
+                  <strong> {aceleY} g</strong>
                   <p>Aceleração Y</p>
                 </div>
               </div>
@@ -160,7 +160,7 @@ const Dashboard: React.FC = () => {
               </div>
               <div id="data">
                 <div id="info">
-                  <strong>{aceleZ}</strong>
+                  <strong>{aceleZ} g</strong>
                   <p>Aceleração Z</p>
                 </div>
               </div>
@@ -174,7 +174,7 @@ const Dashboard: React.FC = () => {
               </div>
               <div id="data">
                 <div id="info">
-                  <strong> {giroX}</strong>
+                  <strong> {giroX}°/s</strong>
                   <p>Giroscópio X</p>
                 </div>
               </div>
@@ -185,7 +185,7 @@ const Dashboard: React.FC = () => {
               </div>
               <div id="data">
                 <div id="info">
-                  <strong> {giroY}</strong>
+                  <strong> {giroY}°/s</strong>
                   <p>Giroscópio Y</p>
                 </div>
               </div>
@@ -196,7 +196,7 @@ const Dashboard: React.FC = () => {
               </div>
               <div id="data">
                 <div id="info">
-                  <strong>{giroZ}</strong>
+                  <strong>{giroZ}°/s</strong>
                   <p>Giroscópio Z</p>
                 </div>
               </div>
