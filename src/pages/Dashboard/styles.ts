@@ -15,7 +15,7 @@ export const Header = styled.header`
     color: #242a75;
     font-size: 20px;
     background-color: #ffff;
-    width: 200px;
+    width: 300px;
     max-width: 1000px;
     justify-content: center;
     border-radius: 10px;
