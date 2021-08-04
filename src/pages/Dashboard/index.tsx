@@ -113,7 +113,7 @@ const Dashboard: React.FC = () => {
               </div>
               <div id="data">
                 <div id="info">
-                  <strong>{pressure} Kpa</strong>
+                  <strong>{pressure} Pa</strong>
                   <p>Pressão</p>
                 </div>
               </div>
