@@ -25,30 +25,10 @@ const Dashboard: React.FC = () => {
   const [giroY, setGiroY] = useState(10);
   const [giroZ, setGiroZ] = useState(10);
   const [alt, setAlt] = useState(10);
-  /*   const [magneX, setMagneX] = useState(10);
-  const [magneY, setMagneY] = useState(10);
-  const [magneZ, setMagneZ] = useState(10); */
   const [value, setValue] = useState(['']);
-
-  /* const [value, setValue] = useState({
-    id: '',
-    Temperature: 0,
-    Pressure: 0,
-    Humidity: 0,
-    AccelerationX: 0,
-    AccelerationY: 0,
-    AccelerationZ: 0,
-    GiroscopeX: 0,
-    GiroscopeY: 0,
-    GiroscopeZ: 0,
-    MagnetometerX: 0,
-    MagnetometerY: 0,
-    MagnetometerZ: 0,
-  }); */
 
   useEffect(() => {
     const handleNewMessage = (topic: string, message: Buffer): void => {
-      // setValue((s) => JSON.parse(message.toString()));
       setValue(message.toString().split(','));
     };
 
@@ -66,9 +46,9 @@ const Dashboard: React.FC = () => {
         setGiroY(parseFloat(parseFloat(value[8]).toFixed(3)));
         setGiroZ(parseFloat(parseFloat(value[9]).toFixed(3)));
         setAlt(parseInt(value[10], 10));
-        /* setMagneX(parseInt(value[10], 10));
-        setMagneY(parseInt(value[11], 10));
-        setMagneZ(parseInt(value[12], 10)); */
+        /* setMagneX(parseFloat(parseFloat(value[11]).toFixed(3)));
+        setMagneY(parseFloat(parseFloat(value[12]).toFixed(3)));
+        setMagneZ(parseFloat(parseFloat(value[13]).toFixed(3))); */
       }
     });
   }, [value]);
